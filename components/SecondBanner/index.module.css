@@ -1,0 +1,104 @@
+.secondBanner {
+  width: 90%;
+  height: auto;
+  padding: 10%;
+  margin-inline: auto;
+  padding: 1em;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 6px 6px 5px 0px rgb(0 0 0 / 5%);
+}
+
+.secondBannerHeader {
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.svgWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.grid {
+  cursor: pointer;
+}
+
+.grid:hover {
+  outline: 10px solid #69ace5;
+}
+
+.secondBannerGrid {
+  margin-top: 13px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+  margin-inline: auto;
+}
+.secondBannerGrid>div {
+padding: 0 10px;
+  border-right: 1px solid #DCDCDC;
+}
+
+.card {
+  border-bottom: 1px solid #DCDCDC;
+  width: 100%;
+  margin: 0 auto;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.card button {
+  width: 90%;
+  height: 40px;
+  background-color: #173596;
+  color: white;
+  border-radius: 2px;
+  border: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .secondBannerGrid {
+    margin-top: 13px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". .";
+    margin-inline: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .secondBannerGrid {
+    margin-top: 13px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      ".";
+  }
+}
